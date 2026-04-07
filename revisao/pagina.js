@@ -1,8 +1,28 @@
-function pagina() {
-    const input = document.getElementById("tarefaInput");
-    const botao = document.getElementById("btnAdicionar");
-    const lista = document.getElementById("listaTarefas");
-    const titulo = document.getElementById("titulo");
+function pagina(){
+    // cria o título
+    const titulo = document.createElement("h2");
+    titulo.textContent = "Lista de Tarefas";
+
+
+   // cria o input
+    const input = document.createElement("input");
+    input.type = "text";
+    input.id = "tarefaInput";
+    input.placeholder = "Digite uma tarefa";
+
+
+    const botao = document.createElement("button");
+    botao.id= "btnAdicionar";
+    botao.textContent = "Adicionar";
+
+    const lista = document.createElement("ul");
+    lista.id = "listaTarefas";
+
+   // adiciona tudo no body
+    document.body.appendChild(titulo);
+    document.body.appendChild(input);
+    document.body.appendChild(botao);
+    document.body.appendChild(lista);
     
     botao.addEventListener("click", () => {
         //Criar novo elemento da lista
