@@ -1,0 +1,25 @@
+#resultadosBusca{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+}
+
+/*
+@media (min-width: 400px) {
+    #resultadosBusca {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+*/
+@media (min-width: 600px) {
+    #resultadosBusca {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    #resultadosBusca {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

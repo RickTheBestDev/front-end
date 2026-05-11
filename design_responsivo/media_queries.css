@@ -1,0 +1,25 @@
+.grid-container{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
